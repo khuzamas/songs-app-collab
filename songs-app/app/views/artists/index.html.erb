@@ -1,0 +1,13 @@
+<h2> Favourite Artists </h2>
+
+    <%  @Artists.each do |artist| %>
+   
+
+<li>
+<%= link_to artist.name, artist_path(artist)%>
+</li>
+
+
+
+
+<% end %>
