@@ -1,0 +1,20 @@
+
+<div class= "list">
+    <p>Name</p>
+    <p>Player</p>
+    <p>Album Cover</p>
+    <p>Action</p>
+</div>
+
+<% @songs.each do |song| %>
+    <div class= "song-card">
+        <p><%= song.name %></p>
+        <audio controls>
+            <source src="/Users/KhuzamShubbar/Desktop/misk/rails/songs-app-collab/songs-app/app/assets/audio/Drake-Back-To-Back-Freestyle_NaijaPlayhiphop.com_.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <img src="<%=song.cover %>" alt="">
+        <%= link_to 'View Album' %>
+    </div>
+    <br>
+<% end %>
