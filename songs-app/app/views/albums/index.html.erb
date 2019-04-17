@@ -1,0 +1,11 @@
+<h1>im index page</h1>
+
+<% @albums.each do |album| %>
+<div><%=album.name %></div>
+<%#= album.image %>
+
+
+<img class="img" src="<%=album.image%>" size="80" />
+
+<%#= image_tag album.image %>
+<% end %>   
