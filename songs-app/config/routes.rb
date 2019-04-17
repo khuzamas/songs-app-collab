@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  # get 'artists/index'
-  # get 'artists/show'
+  get 'albums/index'
+  resources :albums
+  root 'albums#index'
+  get 'songs/index'
+  resources :songs
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root "artist#index"
   resources :artists
 
 end
