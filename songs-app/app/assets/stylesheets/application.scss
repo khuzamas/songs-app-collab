@@ -16,6 +16,11 @@
 
 @import "bootstrap";
 
+
+h2{
+    text-align: center;
+}
+
 nav {
     background-color: rgb(56, 56, 56);
     padding: 10px;
@@ -24,3 +29,4 @@ nav {
 nav a {
     color: white;
 }
+

@@ -11,13 +11,19 @@
 # It's strongly recommended that you check this file into your version control system.
 
 
-ActiveRecord::Schema.define(version: 2019_04_17_114658) do
+ActiveRecord::Schema.define(version: 2019_04_17_122625) do
+
+  create_table "artists", force: :cascade do |t|
+  end
 
   create_table "albums", force: :cascade do |t|
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "image"
+    t.datetime "year"
+  end
 
   create_table "songs", force: :cascade do |t|
     t.string "name"
@@ -25,5 +31,6 @@ ActiveRecord::Schema.define(version: 2019_04_17_114658) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "link"
+  end
 
 end
