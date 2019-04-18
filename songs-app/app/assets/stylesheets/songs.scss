@@ -2,19 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.song-card {
-    margin: 25px;
-    display: flex;
-    justify-content: space-around;
+.table {
+    margin: 35px;
 }
+
+// .song-card {
+//     margin: 25px;
+// }
 
 .song-card img {
     width: 150px;
     height: 150px;
 }
 
-.list {
-    margin: 15px;
-    display: flex;
-    justify-content: space-around;
-}

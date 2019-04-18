@@ -1,9 +1,13 @@
 // Place all the styles related to the albums controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.img{
-    height: auto;
-    width: 300px;
-flex-direction: column;
+// .img{
+//     height: auto;
+//     width: 300px;
+// flex-direction: column;
     
+// }
+
+.albums {
+    display: flex;
 }

@@ -6,6 +6,16 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Artist.destroy_all
+
+Artist.create(name:'Drake')
+Artist.create(name:'Akon')
+Artist.create(name:'Big Shag')
+Artist.create(name:'Phyno')
+Artist.create(name:'Skepta')
+
+
+
 Album.destroy_all
 album1= Album.create(name: 'The Guy', image: 'https://static.hiphopdx.com/2015/07/Screen-Shot-2015-07-29-at-5.31.52-AM.png')
 album2= Album.create(name: 'The nice', image: ' https://upload.wikimedia.org/wikipedia/en/8/85/AKonvicted.jpg')
